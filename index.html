@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="base.css">
-    <title>Kausari Films</title>
+    <title>Kausari Films próximamente</title>
     <style type="text/css">
         body{
-            background-color: black;
+            background-color: white;
         }
         #contenedorLogo{
-            position: absolute;
-            top: 0;
-            left: 50%;
-            margin-left: -103px;
+            position: relative;
             display: block;
+            margin-left: auto;
+            margin-right: auto;
             width: 206px;
+            padding: 10px;
         }
         .slogan{
             text-align: center;
-            color: antiquewhite;
-            background-color: black;
-            text-transform: capitalize;
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 40px;
         }
         .icons{
             position: relative;
@@ -46,18 +47,14 @@
     </style>
 </head>
 <body>
-
-    <!-- Video fondo -->
-    <video id="fondoVideo" autoplay muted loop>
-        <source src="1_Footage.webm" type="video/webm">
-        Tu navegador no soporta el elemento de video.
-    </video>
-
     <div id="contenedorLogo">
         <img src="logo.png" alt="Logo de la página">
-        <p class="slogan">Próximamente Kausari Films</p>
+        <p class="slogan">Bajo construcción</p>
     </div>
     <div class="content">
+        <p>
+            <img src="pngegg.png">
+        </p>
         <div class="social-links">
             <ul class="list icons">
                 <li><a title="Facebook" href="https://www.facebook.com/profile.php?id=100094108763850"><img src="facebook.png"></a></li>
@@ -68,16 +65,6 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <!-- Script personalizado -->
-    <script>
-        $(document).ready(function() {
-            var ventanaAltura = $(window).height();
-            var contenedorAltura = $("#contenedorLogo").height();
-            var margenSuperior = (ventanaAltura - contenedorAltura) / 2;
-            $("#contenedorLogo").css("margin-top", margenSuperior + "px");
-        });
-    </script>
 
 </body>
 </html>
